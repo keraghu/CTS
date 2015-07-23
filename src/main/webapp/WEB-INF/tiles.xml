@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="base.definition"
+		template="WEB-INF/view/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/view/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/footer.jsp" />
+	</definition>
+	
+
+	<!-- <definition name="contact" extends="base.definition">
+		<put-attribute name="title" value="Contact Manager" />
+		<put-attribute name="body" value="/WEB-INF/jsp/contact.jsp" />
+	</definition>-->
+
+
+<definition name="managetraining" extends="base.definition">
+        <put-attribute name="title" value="Manage training" />
+        <put-attribute name="body" value="/WEB-INF/view/manageTraining.jsp" />
+   </definition>
+
+	<definition name="hello" extends="base.definition">
+		<put-attribute name="title" value="Welcome To CTS" />
+		<put-attribute name="body" value="/WEB-INF/view/home.jsp" />
+	</definition>
+	
+	<definition name="trackhome" extends="base.definition">
+		<put-attribute name="title" value="Welcome To CTS" />
+		<put-attribute name="body" value="/WEB-INF/view/trackAdminHome.jsp" />
+	</definition>
+	<definition name="approvetraining" extends="base.definition">
+		<put-attribute name="title" value="Approve training" />
+		<put-attribute name="body" value="/WEB-INF/view/approveTraining.jsp" />
+	</definition>	
+	<definition name="request_train" extends="base.definition">
+        <put-attribute name="title" value="Request training" />
+       <put-attribute name="body" value="/WEB-INF/view/request_training.jsp" />
+      <!--  <put-attribute name="body" value="/WEB-INF/view/requestForTraining.jsp" />  -->
+   </definition>
+
+	<definition name="request_train_conf" extends="base.definition">
+        <put-attribute name="title" value="Request training" />
+       <put-attribute name="body" value="/WEB-INF/view/requestTrainConfirm.jsp" />
+      <!--  <put-attribute name="body" value="/WEB-INF/view/requestForTraining.jsp" />  -->
+   </definition>
+
+</tiles-definitions>
